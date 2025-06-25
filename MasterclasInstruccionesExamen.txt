@@ -55,6 +55,7 @@ contendor y en el frontend/image con el respectivo nombre del contendor.
 
 ==REPOS PARA BASARME==
 https://github.com/rorrenss/IgnitiaProyectos2.git
+https://github.com/javirb667/Apuntes-Extraordinaria-DIS-JRB.git
 
 
 # SI EN EL POM DA ERROR EL PROFILE: comentar el profile y ya.
