@@ -1,0 +1,26 @@
+Masterclas, instrucciones examen:
+
+==SET UP== 
+
+- El repo te lo dan creado
+- Pillar de esto: https://start.spring.io (Maven Java es.ufv.dis jar 17 añadir dependencia spring web) BACK
+- git init
+- Poner el git remote add origin {url del repo}
+- https://start.vaadin.com/app (24.8 Java 17 es.ufv.dis front) FRONT [IMPORTANTISIMO BORRAR EL .git que hay dentro del vaadin(front) ya q rompe el GitHub un poco]
+- Meter el vaadin y el spring en la carpeta del proyecto
+- Hacer el primer git commit y git push a master.
+- Crear develop 
+- Crear en el back el package model, controlador, servicio e inputoutput
+
+==DESARROLLO==
+
+
+==DOCKER==
+
+
+==REPOS PARA BASARME==
+https://github.com/rorrenss/IgnitiaProyectos2.git
+
+
+# SI EN EL POM DA ERROR EL PROFILE: comentar el profile y ya.
+# SI SALE LA TAZA DE ICONO: hay q recargar Maven y abrir back y front por separado
