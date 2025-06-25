@@ -17,6 +17,41 @@ Masterclas, instrucciones examen:
 
 ==DOCKER==
 
+En este apartado se darán unas instrucciones para poder Dockerizar en local, se debe tener
+Maven instalado, Docker ejecutándose y se recomienda tener dos terminales abiertas para
+ser más eficiente. Los pasos son los siguientes:
+
+1. En la primera terminal poner el comando “./mvnw install”.
+
+2. En la primera terminal poner el comando “docker build -t backendpractica:1 -f
+./Backend/Dockerfile .”
+
+3. En la segunda terminal poner el siguiente comando “./mvnw clean package -
+Pproduction”.
+
+4. En la segunda terminal poner el siguiente comando “docker build -t
+frontendpractica:1 -f Frontend/Dockerfile .”.
+
+5. En la primera terminal poner el siguiente comando “docker network create
+practica2”.
+
+6. En la primera terminal poner el comando “docker run -it --rm --network practica2 --
+name backendJV -p 8082:8082 backendpractica:1”.
+
+7. En la segunda terminal poner el comando “docker run -it --rm --network practica2 -
+-name frontendJV -p 8081:8081 frontendpractica:1 java -
+Dspring.profiles.active=prod -jar app.jar”, en caso de que no funcione, poner entre
+comillas la siguiente palabra -Dspring.profiles.active=prod.
+
+8. ¡Ya se está ejecutando ve al puerto 8081 !
+
+9. En caso de querer ejecutarlo con el Docker compose, una vez se haya ejecutado
+una primera vez habiendo seguido los pasos, se debe de ir al Docker-compose y
+modificar en el backend/image: poner el nombre con el que se ha ejecutado el
+contendor y en el frontend/image con el respectivo nombre del contendor.
+
+10. En la primera terminal poner el comando “docker-compose up –build”.
+
 
 ==REPOS PARA BASARME==
 https://github.com/rorrenss/IgnitiaProyectos2.git
